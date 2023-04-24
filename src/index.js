@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom/client";
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root=ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+    <div className="container">
+        <div className="card">
+            <div className="card--header" />
+            <img
+                className="avatar"
+                src="/z4291424577201_2e3e721a4df70fe202564484b5b9bfdb.jpg"
+                alt="avatar"
+            />
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+            <div className="card--body"><br/>
+                <div>
+                    <p className="text-header">Vợ iu</p>
+                    <p className="text-sub">
+                        Bệnh tật có thể cướp đi sinh mạng của anh nhưng nó không thể giết chết tình yêu anh dành cho em. Dù có thế nào trái tim anh vẫn mãi mãi trao cho em như lúc đầu. Anh yêu em
+                    </p>
+                    <button className="btn third">FOLLOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+)
